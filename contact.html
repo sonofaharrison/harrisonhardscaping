@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-crest="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Consultation Portal | Harrison Hardscaping LLC | 443-991-9896</title>
+  <meta name="description" content="Schedule an on-site structural masonry, retaining wall, patio, or dirt grading consultation with Harrison Hardscaping LLC in Maryland. Call 443-991-9896." />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <!-- STICKY EXECUTIVE HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-identity" aria-label="Harrison Hardscaping LLC Home">
+        <div class="asset-frame-1x1">
+          <img
+            src="Harrison_Hardscaping_Dark.jpg"
+            alt="Harrison Hardscaping LLC Heraldic Crest"
+            class="theme-brand-logo"
+            data-brand="hardscaping"
+            data-fallback-title="Harrison Hardscaping Crest"
+            data-asset-status="1:1 CREST"
+          />
+        </div>
+        <div class="brand-titles">
+          <span class="brand-eyebrow">Sons of Harrison Enterprise</span>
+          <span class="brand-name">HARRISON HARDSCAPING</span>
+          <span class="brand-subtag">Structural Masonry &bull; Stone &bull; Earthwork</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services &amp; Specs</a></li>
+          <li><a href="about.html">About &amp; Crest</a></li>
+          <li><a href="contact.html" class="active">Consultation</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-controls">
+        <button type="button" id="view-mode-toggle" class="control-btn" aria-pressed="false">
+          📱 Mobile View
+        </button>
+        <button type="button" id="theme-toggle" class="control-btn" aria-label="Switch Site Theme">
+          ☀️ Light Mode
+        </button>
+        <button type="button" class="mobile-menu-btn" aria-expanded="false" aria-label="Toggle Menu">
+          ☰ MENU
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="main-container">
+
+    <section class="section-block" style="padding-top: 1rem; border-bottom: none;">
+      <div class="section-header">
+        <span class="eyebrow-badge">Maryland Field Dispatch &amp; Site Intake</span>
+        <h1>Request an On-Site Structural Assessment</h1>
+        <p class="lead-copy">
+          Every retaining wall, stone patio, brick staircase, and dirt re-grading project begins with an on-site evaluation of your property's grade elevations, soil conditions, drainage paths, and equipment access.
+        </p>
+      </div>
+
+      <div class="contact-wrapper">
+
+        <!-- LEFT COLUMN: DIRECT FIELD DISPATCH & 9:16 PLATE -->
+        <div class="contact-card">
+          <span class="brand-domain-tag">Direct Field Communications</span>
+          <h3>Maryland Operations Desk</h3>
+          <p class="lead-copy">
+            Contact our field desk directly by phone or use the project intake portal to log your site parameters prior to our visit.
+          </p>
+
+          <ul class="contact-detail-list">
+            <li>
+              <strong>Direct Phone &amp; Field Dispatch</strong>
+              <a href="tel:4439919896" style="font-size: 1.25rem; color: var(--gold);">443-991-9896</a>
+              <span style="display: block; font-size: 0.82rem; color: var(--text-muted);">
+                Call or text with site photos, approximate dimensions, and location.
+              </span>
+            </li>
+            <li>
+              <strong>Operating Territory</strong>
+              <span>Maryland, USA (Residential &amp; Commercial Properties)</span>
+            </li>
+            <li>
+              <strong>Primary Project Scopes</strong>
+              <span>Engineered Retaining Walls &bull; Bluestone, Paver &amp; Brick Flatwork &bull; Dirt Grading &amp; Excavation &bull; Sub-Surface Drainage &bull; Structural Masonry</span>
+            </li>
+            <li>
+              <strong>Parent Enterprise Nexus</strong>
+              <a href="https://sonsofharrison.com" target="_blank" rel="noopener">Sons of Harrison (sonsofharrison.com)</a>
+            </li>
+          </ul>
+
+          <div style="margin-top: 2rem; display: flex; flex-direction: column; align-items: center;">
+            <div class="asset-frame-9x16" style="max-width: 240px;">
+              <img
+                src="Harrison_Hardscaping_Dark_9x16.jpg"
+                alt="Harrison Hardscaping 9:16 Vertical Crest"
+                class="theme-brand-9x16"
+                data-brand="hardscaping"
+                data-fallback-title="Harrison Hardscaping 9:16 Crest"
+                data-asset-status="FIELD DISPATCH"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: SITE ASSESSMENT INTAKE FORM -->
+        <div class="contact-form-card">
+          <span class="brand-domain-tag">Site Assessment Parameters</span>
+          <h3>Project Scope &amp; Grade Intake</h3>
+          <p class="lead-copy">
+            Provide your property location and structural requirements below.
+          </p>
+
+          <form id="hardscaping-consult-form">
+            <div class="form-group">
+              <label for="clientName">Property Owner / Primary Contact Name *</label>
+              <input
+                type="text"
+                id="clientName"
+                name="clientName"
+                placeholder="e.g., John Harrison"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="clientPhone">Direct Phone Number *</label>
+              <input
+                type="tel"
+                id="clientPhone"
+                name="clientPhone"
+                placeholder="e.g., 443-555-0199"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="propertyLocation">Maryland City / County Location *</label>
+              <input
+                type="text"
+                id="propertyLocation"
+                name="propertyLocation"
+                placeholder="e.g., Anne Arundel County, Howard County, Baltimore County, MD"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="projectScope">Primary Hardscaping or Earthwork Scope *</label>
+              <select id="projectScope" name="projectScope" required>
+                <option value="Engineered Retaining Wall / Slope Terracing">Engineered Retaining Wall / Slope Terracing</option>
+                <option value="Bluestone, Paver, or Brick Patio & Walkway">Bluestone, Paver, or Brick Patio &amp; Walkway</option>
+                <option value="Dirt Re-Grading, Excavation & Sub-Surface Drainage">Dirt Re-Grading, Excavation &amp; Sub-Surface Drainage</option>
+                <option value="Masonry Steps, Seat Walls, Columns & Brickwork">Masonry Steps, Seat Walls, Columns &amp; Brickwork</option>
+                <option value="Gravel Pad, Crushed Stone Base, or Driveway Apron">Gravel Pad, Crushed Stone Base, or Driveway Apron</option>
+                <option value="Multi-Scope Structural Hardscaping Package">Multi-Scope Structural Hardscaping Package</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="gradeConditions">Current Site Grade &amp; Access Conditions</label>
+              <select id="gradeConditions" name="gradeConditions">
+                <option value="Flat / Open Yard Access">Flat / Open Equipment Access</option>
+                <option value="Sloped / Hillside Grade Requiring Retention">Sloped / Hillside Grade Requiring Retention</option>
+                <option value="Active Standing Water / Drainage Issue">Active Standing Water / Foundation Drainage Issue</option>
+                <option value="Existing Failing Wall or Concrete Removal Needed">Existing Failing Wall or Concrete Demolition Needed</option>
+                <option value="Tight Gate / Manual Access Only">Tight Gate / Restricted Access</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="projectDetails">Approximate Dimensions, Materials &amp; Project Notes</label>
+              <textarea
+                id="projectDetails"
+                name="projectDetails"
+                rows="4"
+                placeholder="Describe approximate length/height of walls, square footage of flatwork, drainage concerns, or preferred stone/brick materials..."
+              ></textarea>
+            </div>
+
+            <div class="cta-group" style="margin-top: 1rem;">
+              <button type="submit" class="btn-primary">Log Site Assessment Request</button>
+              <a href="tel:4439919896" class="btn-slate">Call 443-991-9896 Now</a>
+            </div>
+
+            <div id="consult-form-status" class="form-status-box" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- EXECUTIVE FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <span class="brand-eyebrow">Harrison Hardscaping LLC // Maryland, USA</span>
+        <p class="footer-copy">
+          &copy; 2026 Harrison Hardscaping LLC. A <a href="https://sonsofharrison.com" style="color: var(--gold); text-decoration: none;">Sons of Harrison</a> Enterprise. Direct Field Desk: <a href="tel:4439919896" style="color: var(--text-main); text-decoration: none; font-weight: 600;">443-991-9896</a>
+        </p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services &amp; Specs</a></li>
+        <li><a href="about.html">About &amp; Crest</a></li>
+        <li><a href="contact.html">Consultation</a></li>
+        <li><a href="privacy.html">Privacy &amp; Governance</a></li>
+        <li><a href="https://sonsofharrison.com" target="_blank" rel="noopener">SonsOfHarrison.com</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
